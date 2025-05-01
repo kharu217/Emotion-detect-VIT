@@ -1,4 +1,14 @@
+import torch
+import torch.nn.functional as F
+from torch.utils.data import DataLoader, Dataset
+from torchvision import transforms
+
+import os
+import glob
+from PIL import Image
+
 from utils import *
+
 
 class Image_dataset(Dataset) :
     def __init__(self, addrs):
@@ -27,4 +37,4 @@ class Image_dataset(Dataset) :
 
 if __name__ == "__main__" :
     test_dataset = Image_dataset("C:\\Users\\User\\Desktop\\github\\data\\train")
-    print(test_dataset[0][0].min())
+    print(test_dataset[0])

@@ -1,12 +1,4 @@
-import torch
-import torch.nn.functional as F
-
-from torch.utils.data import DataLoader, Dataset
 from torchvision import transforms
-
-import os
-import glob
-from PIL import Image
 
 #Emotion dictionary
 emotion = {
